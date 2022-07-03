@@ -1,6 +1,6 @@
 var main = function () {
     var toDos = ["Get groceries",
-        "Make up some new ToDos",
+        "Make up some new to do",
         "Prep for Monday's class",
         "Answer emails",
         "Take Gracie to the park",
