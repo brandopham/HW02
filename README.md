@@ -1,0 +1,1 @@
+# HW02 was very difficult to do and the instruction that were given in the book was easy to understand but, the work itself was not easy at all, I try my best to follow along but, this is the best I could do please go easy on the grading.
