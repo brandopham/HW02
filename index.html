@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <title>Amazeriffic</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        footer {
+            border-top: 1px solid pink;
+            padding: 40px 0 20px 0;
+            background-color: aqua;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        footer .contact {
+            float: left;
+            width: 570px;
+            margin-left: 20px;
+        }
+        footer .contact p:nth-child(2) {
+            color: aqua;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        footer .contact p:nth-child(3),
+        footer .contact p:nth-child(4) {
+            color: black;
+            margin-bottom: 15px;
+        }
+        footer .sitemap {
+            float: right;
+            width: 285px;
+        }
+        footer ul {
+            width: 230px;
+        }
+        li {
+            list-style: none;
+        }
+        .left li,
+        .right li {
+            margin-bottom: 20px !important;
+        }
+        footer .sitemap .left {
+            float: left;
+        }
+        footer .sitemap .right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header style="height:10vh;">
+        <div class="container" style="padding-top: 5vh;">
+            <h1>Amazeriffic!</h1>
+            <nav>
+                <a href="#">Sign Up!</a> |
+                <a href="#">FAQ</a> |
+                <a href="#">Support</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- <b>
+			<h2>Amazeriffic will change your life!</h2>
+		</b>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+			dolore magna aliqua.</p>
+		<h3>Here's why you need Amazeriffic</h3> -->
+        <ul>
+            <!-- <li>It fits your lifestyle</li>
+			<li>It's awesome</li>
+			<li>It rocks your world</li> -->
+            <img>
+            <div class="container">
+                <div class="middlerightcolumn">
+                    <img src="lightbulb.png" alt="an image of a lightbulb"><img>
+        </ul>
+        </div>
+    </main>
+    <main>
+        <div class="container">
+            <div class="tabs">
+                <a href=""><span class="active">Newest</span></a><a href=""><span>Oldest</span></a><a
+                    href=""><span>Add</span></a>
+            </div>
+            <div class="content">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <h5>Contact Us</h5>
+                <p>Amazeriffic!</p>
+                <p>555 Fiftieth Street</p>
+                <p>Asheville, NC 28801</p>
+            </div>
+            <div class="sitemap">
+                <h5>Sitemap</h5>
+                <ul>
+                    <div class="left">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </div>
+                    <div class="right">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="todos.json"></script>
+    <!-- <script>
+		var main = function () {
+			var toDos = ["Get groceries",
+						 "Make up some new ToDos",
+						 "Prep for Monday's class",
+						 "Answer emails",
+						 "Take Gracie to the park",
+						 "Finish writing this book"];
+			$(".tabs a span").toArray().forEach(function (element) {
+				var $element = $(element);
+				// create a click handler for this element
+				$element.on("click", function () {
+					var $content,
+						$input,
+						$button,
+						i;
+					$(".tabs a span").removeClass("active");
+					$element.addClass("active");
+					$("main .content").empty();
+					if ($element.parent().is(":nth-child(1)")) {
+						// newest first, so we have to go through
+						// the array backwards
+						$content = $("<ul>");
+						for (i = toDos.length-1; i >= 0; i--) {
+							$content.append($("<li>").text(toDos[i]));
+						}
+					} else if ($element.parent().is(":nth-child(2)")) {
+						// oldest first, so we go through the array forwards
+						$content = $("<ul>");
+						toDos.forEach(function (todo) {
+							$content.append($("<li>").text(todo));
+						});
+					} else if ($element.parent().is(":nth-child(3)")) {
+						// input a new to-do
+						$input = $("<input>"),
+						$button = $("<button>").text("+");
+		
+						$button.on("click", function () {
+							if ($input.val() !== "") {
+								toDos.push($input.val());
+								$input.val("");
+							}
+						});
+						$content = $("<div>").append($input).append($button);
+					   /* Alternatively append() allows multiple arguments so the above
+						can be done with $content = $("<div>").append($input, $button); */
+					}
+					$("main .content").append($content);
+					return false;
+				});
+			});
+			$(".tabs a:first-child span").trigger("click");
+		};
+		$(document).ready(main);
+	</script> -->
+</body>
+</html>
