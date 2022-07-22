@@ -1,0 +1,90 @@
+header, main, footer {
+    min-width:  900px;
+}
+body {
+    background: #FFFFFF;
+    font-family: sans-serif;
+    margin: 0;
+}
+header, main, footer {
+    min-width: 900px;
+}
+header .container, main .container, footer.container {
+max-width: 900px;
+margin: auto;
+}
+main {
+padding-top: 100px
+}
+header {
+background:  yellow;
+overflow:  auto;
+}
+header h1 {
+font-family: 'Ubuntu', sans-serif;
+font-style: italic;
+color: aqua;
+float: left;
+width: 600px;
+}
+main {
+background: white;
+font-family: Ubuntu;
+padding: 1%
+}
+main img {
+float:  right;
+width: 30%;
+}
+main img {
+position: relative;
+right: 120px;
+float: right;
+}
+a:hover {
+background-color: black;
+}
+.tabs a span{
+display: inline-block;
+border-radius: 10px 10px 0 0;
+width: 120px;
+margin-right: 20px;
+text-align: center;
+background: #ddd;
+padding: 10px;
+}
+.tabs a span.active{
+background: black;
+}
+.tabs a span {
+border-radius: 10px 10px 0 0;
+display: inline-block;
+width: 120px;
+margin-right: 10px;
+text-align: center;
+background: #ddd;
+padding: 10px;
+}
+.tabs a .active {
+background: white;
+}
+main .content {
+padding: 30px 10px 30px 10px;
+border-radius: 0 5px 5px 5px;
+background: whitesmoke;
+}
+main .content li {
+border-radius: 5px;
+padding: 3px;
+background: aqua;
+margin: 0 0 15px 0;
+}
+main .content button {
+font-weight: bold;
+padding: 0 6px 0 6px;
+border-radius: 10px;
+background: whitesmoke;
+cursor: pointer;
+margin-left: 10px;
+font-size: 2.0em;
+}

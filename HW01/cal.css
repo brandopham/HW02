@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: gray;
+}
+.box{
+    width: 65%;
+    height: 65vh;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 16px 16px 30px silver, -16px -16px 30px darkgray;
+}
+.screen #display{
+    width: 97%;
+    height: 70px;
+    font-size: 40px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 9px;
+    box-shadow: 12px 12px 12px #cbced1, -12px -12px 12px #ffffff;
+}
+.btns{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btns .row button{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 7px;
+    border-radius: 6px;
+    box-sizing: 7px 7px 9px #020, -7px -7px 9px #ffffff;
+    transition: .1s;
+}
+.btns .row button:hover{
+    box-shadow: inset 7px 7px 10px rgba(15,15,15,.2),-7px -7px 10px white;
+    background: white;
+}
+
+#eval{
+    background: blue;
+    color: white;
+    box-shadow: inset 7px 7px 10px aqua,-7px -7px 10px purple;
+
+}
+#eval:hover{
+    box-shadow: inset 7px 7px 10px purple,-7px -7px 10px purple;
+}
+#c{
+    background: blue;
+    color: white;
+    box-shadow: inset 7px 7px 10px aqua,-7px -7px 10px purple;
+
+}
+#c:hover{
+    box-shadow: inset 7px 7px 10px purple,-7px -7px 10px purple;
+}
+#ac{
+    background: blue;
+    color: white;
+    box-shadow: inset 7px 7px 10px aqua,-7px -7px 10px purple;
+
+}
+#ac:hover{
+    box-shadow: inset 7px 7px 10px purple,-7px -7px 10px purple;
+}
